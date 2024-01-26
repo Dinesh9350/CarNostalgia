@@ -1,0 +1,29 @@
+{
+  "name": "carnostalgia",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://Dinesh9350.github.io/CarNostalgia",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-shimmer": "^3.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "process": "^0.11.10"
+  }
+}
