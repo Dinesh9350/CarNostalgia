@@ -15,8 +15,9 @@ const Body = () => {
   }, []);
 
   const getCarsData = async () => {
+    //  https://api.spinny.com/sp-consumer-search/product/listing/?page=1&include_booked=false&o=popular
     const response = await fetch(
-      'https://corsproxy.io/?https://api.spinny.com/sp-consumer-search/product/listing/?page=1&include_booked=false&o=popular'
+      'https://corsproxy.org/?https%3A%2F%2Fapi.spinny.com%2Fsp-consumer-search%2Fproduct%2Flisting%2F%3Fpage%3D1%26include_booked%3Dfalse%26o%3Dpopular'
     );
     const json = await response.json();
     setAllCars(json.results);
